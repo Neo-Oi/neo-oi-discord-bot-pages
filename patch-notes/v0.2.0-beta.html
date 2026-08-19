@@ -3,45 +3,41 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="りべりべショッピング v0.2.2-beta Season 0 パッチノート">
-  <title>りべりべショッピング v0.2.2-beta</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="りべりべショッピング v0.2.0-beta パッチノート">
+  <title>りべりべショッピング v0.2.0-beta</title>
+  <link rel="stylesheet" href="../style.css">
   <style>@media(max-width:760px){.hero h1{font-size:2.5rem;word-break:keep-all}}</style>
 </head>
 <body>
-  <nav class="patch-nav wrap"><a href="patch-notes/">過去のパッチノート</a></nav>
+  <nav class="patch-nav wrap"><a href="../">最新パッチノート</a><a href="./">バージョン一覧</a></nav>
   <header class="hero">
     <div class="hero__glow"></div>
     <div class="wrap hero__content">
-      <span class="badge">SEASON 0 UPDATE</span>
+      <span class="badge">BETA</span>
       <p class="eyebrow">RIBERIBE SHOPPING · PATCH NOTES</p>
-      <h1>Season 0<br><span>パッシブ＆鑑定アップデート</span></h1>
-      <p class="version">v0.2.2-beta</p>
-      <p class="lead">5つのSeason 0パッシブ、未鑑定品と高レア確定の鑑定、パネル送金、専用コインUIを追加します。</p>
+      <h1>アイテム大幅追加<br><span>アップデート</span></h1>
+      <p class="version">v0.2.0-beta</p>
+      <p class="lead">新たなリング、運試しの福袋、時価で取引するコイン。探索と経済に、新しい選択肢が加わります。</p>
     </div>
   </header>
 
   <main class="wrap">
     <section>
-      <p class="kicker">NEW IN v0.2.2-beta</p><h2>Season 0の主な変更点</h2>
+      <h2>今回の主な変更点</h2>
       <div class="grid three">
-        <article class="card rare"><span class="rarity">SEASON PASSIVE</span><h3>🌱 5つのパッシブ</h3><p>探索・ワークを強化するSeason 0限定装備を、専用ショップと別枠ボーナスへ追加。</p></article>
-        <article class="card jackpot"><span class="rarity">SPECIAL DROP</span><h3>🔮 未鑑定品</h3><p>探索・デイリー・福袋から低確率で発見。1,000ptで鑑定すると高レアが確定します。</p></article>
-        <article class="card legendary"><span class="rarity">LEGENDARY 5%</span><h3>✨ 鑑定</h3><p>鑑定結果は7種類。ちくんリング3%、りべリング2%を含む高レア寄りの抽選です。</p></article>
-        <article class="card normal"><span class="rarity">PANEL</span><h3>💸 パネル送金</h3><p>送金先・金額・確認の順に安全に送金。1回10,000pt、1日30,000ptまで。</p></article>
-        <article class="card rare"><span class="rarity">UI</span><h3>✨ ドロップダウン化</h3><p>所持中の消費アイテムだけを一覧化。コインとパッシブは専用UIへ分離しました。</p></article>
-        <article class="card jackpot"><span class="rarity">ADMIN</span><h3>🛡️ 管理者専用UI</h3><p>環境変数で指定した1ユーザーだけが開けるephemeral管理パネルを追加。</p></article>
+        <article class="card legendary"><span class="rarity">LEGENDARY</span><h3>💍 2つのリング</h3><p>ちくんリングとりべリングは、所持するだけで探索成功率をそれぞれ恒常的に+3ポイントします。</p></article>
+        <article class="card jackpot"><span class="rarity">JACKPOT</span><h3>🎰 変動するコイン相場</h3><p>ビットちくんコインの価格は毎時、確率表から独立してランダムに更新されます。</p></article>
+        <article class="card rare"><span class="rarity">RARE</span><h3>🎁 ネオ福袋</h3><p>1,000ちくんptで購入でき、8種類の結果から必ず1つを獲得できます。</p></article>
       </div>
-      <aside class="notice"><strong>Season 0 パッシブ</strong><p>コンパス6,000pt、ブーツ5,000pt、グローブ7,000pt、リュック10,000pt、ツールセット9,000pt。同じパッシブを複数所持しても効果は重複しません。</p></aside>
     </section>
 
     <section class="split">
       <article>
         <p class="kicker">EXPLORATION</p><h2>探索をシンプルに</h2>
-        <p>基本成功率<strong>20%</strong>、コーヒー最大+30ポイント、両リング+6ポイントに、開拓者コンパス+2ポイントが加わり最大<strong>58%</strong>になります。</p>
-        <div class="rates"><span>ネオコーヒー <b>76.0%</b></span><span>開拓者バッジ <b>19.0%</b></span><span>ネオクリスタル <b>4.9%</b></span><span class="red">りべリング <b>0.1%</b></span></div>
+        <p>残高による変動を廃止し、基本成功率を常に<strong>20%</strong>へ変更。コーヒー最大+25ポイント、両リング+6ポイントで最大<strong>51%</strong>になります。</p>
+        <div class="rates"><span>ネオコーヒー <b>74.9%</b></span><span>開拓者バッジ <b>20.0%</b></span><span>ネオクリスタル <b>5.0%</b></span><span class="red">りべリング <b>0.1%</b></span></div>
       </article>
-      <article class="formula"><small>MAX SUCCESS RATE</small><strong>20 + 30 + 3 + 3 + 2</strong><em>= 58%</em></article>
+      <article class="formula"><small>MAX SUCCESS RATE</small><strong>20 + 25 + 3 + 3</strong><em>= 51%</em></article>
     </section>
 
     <section>
@@ -55,19 +51,11 @@
       <aside class="notice"><strong>リング重複時の特別変換</strong><p>福袋からすでに所持しているリングが出た場合、リングは追加されず<strong class="points">15,000ちくんpt</strong>へ変換されます。</p></aside>
     </section>
 
-    <section>
-      <p class="kicker">DAILY REWARD</p><h2>デイリーにも運試しを</h2>
-      <div class="grid two">
-        <article class="card rare"><span class="rarity">RARE</span><h3>🏅 開拓者バッジ</h3><p><strong class="points">1,000ちくんpt</strong>で販売。受取状態はリセットせず、次回の通常デイリーを1.1～3.0倍にして、基礎抽選とは別にアイテムを必ず1個追加します。</p></article>
-        <article class="card normal"><span class="rarity">DAILY ITEM</span><h3>🎊 2つのアイテム抽選</h3><p>通常デイリーは30%の基礎抽選。バッジ効果中はさらに、コーヒー75%、バッジ18%、エナジー5%、クリスタル1.8%、コイン0.2%の確定抽選を行います。</p></article>
-      </div>
-    </section>
-
     <section class="market">
       <p class="kicker">MARKET</p><h2>ビットちくんコイン</h2>
       <div class="market-grid">
         <div><h3>購入</h3><p>相場が<strong>1.0倍</strong>の時間帯のみ、1人につき最大2枚まで購入可能です。次の相場へ切り替わると購入枠が更新されます。</p></div>
-        <div><h3>売却</h3><p>コイン専用UIから<strong>1枚ずつ</strong>現在価格で売却。倍率・価格・所持枚数・次回更新時刻を確認できます。</p></div>
+        <div><h3>売却</h3><p>「アイテム使用」から<strong>1枚ずつ</strong>現在価格で売却。使用前に倍率・価格・次回更新時刻を確認できます。</p></div>
       </div>
       <div class="warning"><span>⚠</span><div><strong>相場更新5分前は売却できません</strong><p>更新境界で表示価格と確定価格が食い違う不具合を防ぐため、安全期間として売却を停止します。更新後に新価格を確認してください。</p></div></div>
       <details><summary>全倍率の抽選確率を見る</summary><div class="rate-table">
@@ -79,13 +67,13 @@
       <p class="kicker">QUALITY OF LIFE</p><h2>遊びやすさもアップデート</h2>
       <div class="grid three compact">
         <article><b>⚡ エナジー4枠化</b><p>日本時間8:00 / 12:00 / 16:00 / 20:00から始まる各枠で受取可能。</p></article>
-        <article><b>📊 確率をゲーム内表示</b><p>デイリー・バッジ・ワーク・探索・コイン・福袋の確率を、常設パネルから本人だけ確認できます。</p></article>
+        <article><b>📊 確率をゲーム内表示</b><p>ワーク・探索・コイン・福袋の確率を、常設パネルから本人だけ確認できます。</p></article>
         <article><b>✨ レア度別演出</b><p>NORMALからLEGENDARYまで、色と装飾が変化する共通獲得演出を追加。</p></article>
       </div>
     </section>
 
     <section class="rarities"><h2>レア度カラー</h2><div><span class="normal">NORMAL</span><span class="rare-c">RARE</span><span class="super">SUPER RARE</span><span class="jackpot-c">JACKPOT</span><span class="legendary-c">LEGENDARY</span><span class="point-c">ちくんpt</span></div></section>
   </main>
-  <footer><div class="wrap">りべりべショッピング <b>v0.2.2-beta</b> · SEASON 0 UPDATE</div></footer>
+  <footer><div class="wrap">りべりべショッピング <b>v0.2.0-beta</b> · BETA</div></footer>
 </body>
 </html>
