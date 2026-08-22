@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="りべりべショッピング Season 0 一般公開">
-  <title>Season 0 一般公開 · りべりべショッピング</title>
+  <meta name="description" content="りべりべショッピング v1.0.1 Season 0 安定性アップデート">
+  <title>Season 0 安定性アップデート · りべりべショッピング</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,20 +15,20 @@
       <span class="badge">一般公開</span>
       <p class="eyebrow">RIBERIBE SHOPPING</p>
       <h1>Webから<br><span>遊べる</span></h1>
-      <p class="version">v1.0.0-season0</p>
-      <p class="lead">Web版をメインクライアントとして一般公開しました。Discord版も同じデータを使うサブクライアントとして継続利用できます。</p>
+      <p class="version">v1.0.1-season0</p>
+      <p class="lead">WebとDiscordの同時操作、再試行、Seasonリセットを安全にする安定性アップデートを公開しました。</p>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <h2>💬 Discord版への影響</h2>
-      <p>Discord版はこれまで通り利用できます。既存コマンドと常設パネルは変更されず、Web版の準備中もDiscordだけで遊び続けられます。Web版はDiscord版の後継ではなく、同じゲームの別クライアントです。</p>
+      <h2>🛡️ データ更新を安全に</h2>
+      <p>対象ユーザーのPostgreSQL行だけをロックして更新し、ゲーム結果・履歴・request IDを1つのトランザクションで確定するよう変更しました。WebとDiscordの同時操作や再試行でも、報酬の二重付与と古い状態による上書きを防ぎます。</p>
     </section>
     <section>
-      <h2>📝 リリースについて</h2>
-      <p>提供開始時期と対象範囲は、準備が整い次第お知らせします。掲載している内容は開発中のため、正式公開までに変更される場合があります。</p>
+      <h2>✨ WebとSeasonの改善</h2>
+      <p>換金素材とEXPチップをWebから使用可能にし、EXPチップの一括使用、通常/Seasonショップの区分、所有済み表示、履歴追加表示、日付・相場の自動更新、読込再試行を追加しました。Seasonパッシブは入手経路にかかわらず各種類1個までです。</p>
     </section>
   </main>
-  <footer><div class="wrap">りべりべショッピング <b>v1.0.0-season0</b> · 一般公開</div></footer>
+  <footer><div class="wrap">りべりべショッピング <b>v1.0.1-season0</b> · 一般公開</div></footer>
 </body>
 </html>

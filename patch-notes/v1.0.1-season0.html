@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="りべりべショッピング v1.0.1 Season 0 安定性アップデート">
+  <title>Season 0 安定性アップデート · りべりべショッピング</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <nav class="patch-nav wrap"><a href="../">最新</a><a href="./">すべてのパッチノート</a><a href="../help.html">Help</a><a href="https://riberibe-shopping-web.vast-globe-2927.chatgpt.site/">Web版で遊ぶ</a></nav>
+  <header class="history-hero"><div class="wrap"><span class="badge">HOTFIX</span><p class="eyebrow">RIBERIBE SHOPPING · PATCH NOTES</p><h1>Season 0<br>安定性アップデート</h1><p class="version">v1.0.1-season0 · 2026.08.23</p><p class="lead">共有データの安全性を中心に、Webのアイテム操作、履歴、時刻表示、運用機能を改善しました。</p></div></header>
+  <main class="wrap">
+    <section><p class="kicker">DATA INTEGRITY</p><h2>🛡️ Web・Discord同時操作を安全に</h2><div class="grid two"><article class="card legendary"><h3>行ロックによる更新</h3><p>操作対象のユーザー行だけをPostgreSQLから読み直してロックし、古いメモリ状態による上書きを防止しました。</p></article><article class="card rare"><h3>原子的な再試行対策</h3><p>ゲーム結果、Season報酬、履歴、request IDを同じトランザクションで確定し、通信再試行による二重付与を防止しました。</p></article></div></section>
+    <section><p class="kicker">WEB UPDATE</p><h2>✨ Webからすべての主要アイテムを操作</h2><div class="grid two"><article class="card normal"><h3>換金・EXP</h3><p>ネオ鉱石、ネオジェム、ネオコア、ネオクリスタルの換金と、EXPチップの1個使用・一括使用に対応しました。</p></article><article class="card rare"><h3>ショップ・履歴</h3><p>通常ショップとSeasonショップを分け、所持数・所有済み表示を追加。履歴は最大50件まで追加表示できます。</p></article></div></section>
+    <section><p class="kicker">SEASON SAFETY</p><h2>🌱 Seasonの不変条件を強化</h2><p>5種のSeasonパッシブは、ショップ・ドロップ・管理者付与のすべてで各種類1個までになりました。Season期間はDB上の開始・終了日時で判定し、リセットはゲーム操作と直列化されます。</p></section>
+    <section><p class="kicker">OPERATIONS</p><h2>📜 監査・運用を改善</h2><p>購入、売却、使用、鑑定、送金、管理操作を含む状態変更へ差分ログを追加しました。管理者は最新ログとユーザー別ログを確認でき、ログ閲覧自体も記録されます。ログ保持処理、正常終了処理、コンテナのヘルスチェック、CIのlint・Webテストも追加しました。</p></section>
+  </main>
+  <footer><div class="wrap">りべりべショッピング <b>v1.0.1-season0</b> · 2026.08.23</div></footer>
+</body>
+</html>
