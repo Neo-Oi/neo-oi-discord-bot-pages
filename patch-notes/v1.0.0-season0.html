@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="りべりべショッピング Season 0 大規模アップデート。Web版一般公開、Season Level、新探索経済を追加。">
+  <title>Season 0 大規模アップデート · りべりべショッピング</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <nav class="patch-nav wrap"><a href="../">最新</a><a href="./">すべてのパッチノート</a><a href="../help.html">Help</a><a href="https://riberibe-shopping-web.vast-globe-2927.chatgpt.site/">Web版で遊ぶ</a></nav>
+  <header class="history-hero"><div class="wrap">
+    <span class="badge">一般公開</span>
+    <p class="eyebrow">RIBERIBE SHOPPING · PATCH NOTES</p>
+    <h1>Season 0<br>大規模アップデート</h1>
+    <p class="version">v1.0.0-season0 · 2026.08.23</p>
+    <p class="lead">探索して、集めて、育てる。Web版の正式公開とともに、1か月を遊び切るSeason Level、新しい探索報酬、履歴機能を追加しました。</p>
+  </div></header>
+
+  <main class="wrap">
+    <section>
+      <p class="kicker">WEB STATUS</p><h2>🌐 Web版を一般公開</h2>
+      <div class="grid two">
+        <article class="card rare"><span class="rarity">MAIN CLIENT</span><h3>ブラウザだけでプレイ</h3><p>Discord OAuthでログインし、Dashboard、Daily、Work、Explore、Energy、Inventory、Shop、Ranking、Season、History、Probabilitiesをスマートフォン・PCから利用できます。</p></article>
+        <article class="card legendary"><span class="rarity">SHARED DATA</span><h3>Discordと完全共有</h3><p>残高、アイテム、クールダウン、週間pt、Season XP、Level、ランキングは同じPostgreSQLデータを使用します。WebとDiscordのどちらから操作しても同じ状態へ反映されます。</p></article>
+      </div>
+      <aside class="notice"><strong>Discord版は廃止されません</strong><p>Web版をメインクライアントとして開発しますが、Discord版もサブクライアント・通知・コミュニティ・代替操作環境として継続利用できます。</p></aside>
+    </section>
+
+    <section>
+      <p class="kicker">SEASON PROGRESSION</p><h2>🌱 Season Level / XP</h2>
+      <div class="split"><div><p>SeasonはLv1・0XPから始まり、最大Lv30。完走に必要な累計XPは4,800XPです。Levelそのものに能力補正はなく、遊んだ記録と報酬の進行として楽しめます。</p><div class="rates"><span>Daily成功 <b>20XP</b></span><span>Work成功 <b>5XP</b></span><span>Explore実行 <b>5XP</b></span><span>Explore成功 <b>追加5XP / 合計10XP</b></span><span>ネオEXPチップ使用 <b>25XP</b></span></div></div><div class="formula"><small>SEASON GOAL</small><strong>Lv30</strong><em>4,800</em><small>XP</small></div></div>
+      <p>一度のXP獲得で複数Levelを跨いだ場合も、到達したすべての報酬を順番に一度だけ自動付与します。Lv30では永久称号 <b>Season 0 MASTER</b> とネオ福袋×2を獲得します。</p>
+    </section>
+
+    <section>
+      <p class="kicker">EXPLORE UPDATE</p><h2>🧭 探索報酬を全面更新</h2>
+      <p>探索に成功した後、次の100%テーブルからメイン報酬を必ず1個抽選します。「探索成功率」と「成功後の排出率」は別の確率です。</p>
+      <div class="rate-table"><span>☕ コーヒー <b>45.0%</b></span><span>🏅 バッジ <b>10.0%</b></span><span>🪨 ネオ鉱石 <b>30.0%</b></span><span>🔷 ネオジェム <b>10.0%</b></span><span>🔶 ネオコア <b>3.0%</b></span><span>💎 クリスタル <b>1.9%</b></span><span>💍 りべリング <b>0.1%</b></span><span>合計 <b>100%</b></span></div>
+      <div class="grid two" style="margin-top:20px"><article class="card rare"><h3>💠 EXPチップ別枠20%</h3><p>探索成功時、メイン報酬とは独立して20%で1個獲得。1個につき25 Season XPです。Season終了時に消滅します。</p></article><article class="card jackpot"><h3>🎒 リュック別枠15%</h3><p>探索成功時15%で追加抽選。りべリングとEXPチップを除く通常探索報酬6種が対象です。</p></article></div>
+    </section>
+
+    <section>
+      <p class="kicker">ECONOMY BALANCE</p><h2>💰 新しい換金アイテム</h2>
+      <div class="grid three compact"><article><b>🪨 ネオ鉱石</b><p class="points">500ptで換金</p></article><article><b>🔷 ネオジェム</b><p class="points">1,000ptで換金</p></article><article><b>🔶 ネオコア</b><p class="points">2,500ptで換金</p></article></div>
+      <p>3種は探索専用で、ショップ購入・プレイヤー間送金はできません。ネオクリスタルは購入価格6,000pt、換金額5,000ptへ変更し、往復取引でptが増えない設計にしました。</p>
+    </section>
+
+    <section>
+      <p class="kicker">SEASON PASSIVES</p><h2>🧰 5種のパッシブを再調整</h2>
+      <div class="rates"><span>🧭 開拓者コンパス / 6,000pt <b>探索成功率 +5ポイント</b></span><span>🥾 開拓者ブーツ / 5,000pt <b>探索CT 15%短縮</b></span><span>🧤 開拓者グローブ / 7,000pt <b>ワーク基礎報酬 +15%</b></span><span>🎒 開拓者リュック / 10,000pt <b>探索成功時15%で追加抽選</b></span><span>🔧 開拓者ツールセット / 9,000pt <b>ワーク後20%で次回CT半減</b></span></div>
+      <p>価格は据え置きです。各種類は1ユーザー1個までで、同じ効果は重複しません。異なる種類は同時に所持できます。</p>
+    </section>
+
+    <section>
+      <p class="kicker">HISTORY & SAFETY</p><h2>📜 履歴と安全性</h2>
+      <div class="grid two"><article class="card normal"><h3>プレイヤー履歴</h3><p>WebのHistoryとDiscordの <code>/history</code> から、行動、pt増減、XP、操作元を本人だけが確認できます。</p></article><article class="card rare"><h3>安全な同時操作</h3><p>永続request ID、監査ログ、1回限りのハッシュ連携コード、OAuth state検証、rate limitを追加。通知失敗時もゲーム報酬は確定済みとして維持します。</p></article></div>
+    </section>
+
+    <section>
+      <p class="kicker">SEASON RESET</p><h2>🗓️ 約1か月ごとのSeason更新</h2>
+      <p>Season終了時はLevel、XP、EXPチップ、Seasonパッシブだけを明示的にリセットします。通常残高や通常アイテムを推測で削除しません。最終到達Lv、Lv30到達回数、完走履歴、Season 0 MASTER称号は永久記録として残ります。</p>
+    </section>
+  </main>
+  <footer><div class="wrap">りべりべショッピング <b>v1.0.0-season0</b> · 2026.08.23 · Web一般公開 / Discord継続</div></footer>
+</body>
+</html>

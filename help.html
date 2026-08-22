@@ -9,7 +9,7 @@
 </head>
 <body>
   <nav class="patch-nav wrap"><a href="./">最新パッチノート</a><a href="patch-notes/">過去のパッチノート</a></nav>
-  <header class="history-hero"><div class="wrap"><p class="eyebrow">RIBERIBE SHOPPING · HELP</p><h1>遊び方・ヘルプ</h1><p class="lead">v0.2.3-beta時点の正しいゲーム仕様をまとめています。</p></div></header>
+  <header class="history-hero"><div class="wrap"><p class="eyebrow">RIBERIBE SHOPPING · HELP</p><h1>遊び方・ヘルプ</h1><p class="lead">Season 0のWeb/Discord共通仕様です。Webがメイン、Discordも継続利用できます。</p></div></header>
   <main class="wrap">
     <section><p class="kicker">GETTING STARTED</p><h2>基本の遊び方</h2><div class="grid three compact">
       <article><b>🎁 デイリー</b><p>毎朝8時更新。通常500ptで、30%の基礎アイテム抽選があります。</p></article>
@@ -22,7 +22,7 @@
     <section><p class="kicker">SHOP & ITEMS</p><h2>ショップとアイテム</h2><div class="grid two">
       <article class="card normal"><h3>🏪 通常ショップ</h3><p>コーヒー、バッジ、クリスタル、福袋、条件付きコイン、1人1個のちくんリングを購入できます。</p></article>
       <article class="card rare"><h3>🌱 Season 0ショップ</h3><p>コンパス、ブーツ、グローブ、リュック、ツールセットを販売。同じパッシブを複数持っても効果は重複しません。</p></article>
-      <article class="card rare"><h3>✨ アイテム使用</h3><p>常設パネルのドロップダウンから消費アイテムを直接選択します。パッシブ、リング、コインは表示対象外です。</p></article>
+      <article class="card rare"><h3>✨ アイテム使用</h3><p>「アイテムを使う」を押すと、本人専用メニューに所持中の消費アイテムと数量が表示されます。効果を確認してから1個使用します。パッシブ、リング、コインは表示対象外です。</p></article>
       <article class="card jackpot"><h3>🔮 未鑑定品</h3><p>1個と1,000ptで鑑定。選択後に残高と料金を確認し、LEGENDARY合計5%の高レア抽選を行います。</p></article>
       <article class="card rare"><h3>🎁 ネオ福袋</h3><p>1回1個を開封し、必ずアイテムを獲得。所持済みリングは15,000ptへ変換されます。</p></article>
       <article class="card jackpot"><h3>🪙 ビットちくんコイン</h3><p>毎時0.1～2.0倍で相場更新。1.0倍時のみ1期間2枚まで購入でき、更新5分前は売却停止します。</p></article>
@@ -36,15 +36,18 @@
       <article><b>🎨 レア度</b><p>NORMAL、RARE、SUPER RARE、JACKPOT、LEGENDARYの順で演出が変化します。</p></article>
     </div></section>
     <section><p class="kicker">PASSIVES</p><h2>恒常・Season 0効果</h2><div class="rates">
-      <span>ちくんリング / りべリング <b>探索成功率 各+3ポイント</b></span><span>開拓者コンパス <b>探索成功率 +2ポイント</b></span><span>開拓者ブーツ <b>探索CT 5%短縮</b></span><span>開拓者グローブ <b>ワーク基礎報酬 +5%</b></span><span>開拓者リュック <b>探索成功時5%で追加抽選</b></span><span>開拓者ツールセット <b>ワーク後10%で次回CT半減</b></span>
+      <span>ちくんリング / りべリング <b>探索成功率 各+3ポイント</b></span><span>開拓者コンパス <b>探索成功率 +5ポイント</b></span><span>開拓者ブーツ <b>探索CT 15%短縮</b></span><span>開拓者グローブ <b>ワーク基礎報酬 +15%</b></span><span>開拓者リュック <b>探索成功時15%で追加抽選</b></span><span>開拓者ツールセット <b>ワーク後20%で次回CT半減</b></span>
     </div></section>
+    <section><p class="kicker">SEASON LEVEL</p><h2>Lv1〜30 / 4,800XP</h2><p>Daily成功20XP、Work成功5XP、Explore実行5XP・成功時さらに5XP。探索成功時20%でネオEXPチップ（1個25XP）を獲得します。複数Lvを跨いだ報酬も一度だけ自動付与され、Lv30で永久称号 Season 0 MASTERを獲得します。</p><p>Season終了時はLevel、XP、EXPチップ、5種のSeasonパッシブだけをallowlistで消去します。最終Lv、完走、Lv30称号は永久記録です。</p></section>
+    <section><p class="kicker">EXPLORE DROPS</p><h2>探索成功後のメイン抽選</h2><div class="rates"><span>ネオコーヒー <b>45.0%</b></span><span>開拓者バッジ <b>10.0%</b></span><span>ネオ鉱石（500pt） <b>30.0%</b></span><span>ネオジェム（1,000pt） <b>10.0%</b></span><span>ネオコア（2,500pt） <b>3.0%</b></span><span>ネオクリスタル（5,000pt換金） <b>1.9%</b></span><span>りべリング <b>0.1%</b></span></div><p>これは探索成功後の確率です。探索そのものの基礎成功率20%とは別です。EXPチップ20%とリュック15%も独立抽選です。</p></section>
+    <section><p class="kicker">WEB / HISTORY</p><h2>共有データと履歴</h2><p>Discord OAuthでログインすると既存のDiscord user IDへ接続します。残高、所持品、CT、週間pt、ランキング、Season XP/Levelは即時共有されます。WebのHistoryとDiscordの /history では本人の主要操作だけを確認できます。</p></section>
     <section><p class="kicker">FAQ</p><h2>よくある質問</h2>
-      <details><summary>アイテムがドロップダウンに表示されない</summary><p>パッシブ、リング、ビットちくんコインは通常使用の対象外です。選択時には最新の所持数を再確認します。</p></details>
+      <details><summary>アイテムがドロップダウンに表示されない</summary><p>本人専用メニューには、現在所持している使用可能アイテムだけが表示されます。パッシブ、リング、ビットちくんコインは通常使用の対象外です。</p></details>
       <details><summary>週間ptに送金や換金が入らない</summary><p>週間ランキングは活動量を競うため、デイリーとワークの最終報酬だけが対象です。</p></details>
       <details><summary>週替わりにBotが停止していた</summary><p>次回起動後の最初の操作時に前週を一度だけ精算します。報酬は二重配布されません。</p></details>
       <details><summary>高レア告知が投稿されない</summary><p>専用チャンネルIDと、View Channel・Send Messages・Embed Links権限を確認してください。告知失敗でもアイテムは獲得済みです。</p></details>
     </section>
   </main>
-  <footer><div class="wrap">りべりべショッピング · CURRENT HELP · v0.2.3-beta</div></footer>
+  <footer><div class="wrap">りべりべショッピング · CURRENT HELP · Season 0</div></footer>
 </body>
 </html>

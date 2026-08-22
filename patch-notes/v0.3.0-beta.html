@@ -1,20 +1,7 @@
-<!doctype html>
-<html lang="ja">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="りべりべショッピング v0.3.0-beta パッチノート">
-  <title>りべりべショッピング v0.3.0-beta</title>
-  <link rel="stylesheet" href="../style.css">
-</head>
-<body>
-  <nav class="patch-nav wrap"><a href="../help.html">遊び方・ヘルプ</a><a href="../">最新パッチノート</a><a href="./">バージョン一覧</a></nav>
-  <header class="hero"><div class="hero__glow"></div><div class="wrap hero__content"><span class="badge">WEB BETA</span><p class="eyebrow">RIBERIBE SHOPPING · PATCH NOTES</p><h1>DiscordとWebを<br><span>ひとつのゲームへ</span></h1><p class="version">v0.3.0-beta</p><p class="lead">同じ残高・アイテム・クールダウンを使うWeb版の初期基盤を追加しました。</p></div></header>
-  <main class="wrap">
-    <section><p class="kicker">WEB STATUS</p><h2>🌐 Phase 1 / 限定β</h2><div class="grid two"><article class="card rare"><span class="rarity">SYNC</span><h3>🔗 Discordアカウント連携</h3><p>Webに表示されるコードをDiscordの /weblink で入力すると、同じPostgreSQLデータを利用できます。</p></article><article class="card jackpot"><span class="rarity">DASHBOARD</span><h3>📱 基本ゲームループ</h3><p>デイリー、ワーク、探索、エナジー、持ちもの、ショップ、コイン相場、ランキングをスマートフォン対応画面から利用できます。</p></article></div><aside class="notice"><strong>限定βです</strong><p>現在は少人数で同期や操作の安全性を確認する段階です。一般公開完了とは表記しません。</p></aside></section>
-    <section><p class="kicker">SAFE BY DESIGN</p><h2>Web同期APIの保護</h2><div class="grid three compact"><article><b>🔐 サーバー間認証</b><p>共有シークレットはブラウザへ渡さず、Webバックエンドだけが保持します。</p></article><article><b>🛡️ 入力・頻度制限</b><p>操作ホワイトリスト、入力検証、レート制限、重複リクエスト防止を追加しました。</p></article><article><b>💾 PostgreSQL正本</b><p>報酬・抽選・CT判定はすべてBot/API側で行います。</p></article></div></section>
-    <section><p class="kicker">DISCORD</p><h2>💬 Discord版への影響</h2><p>Discord版はこれまで通り利用できます。既存コマンドと常設パネルの操作方法は変わりません。Discordだけで遊ぶユーザーはWebを使う必要がなく、Web版が停止・未設定でもDiscord版は通常動作します。</p><div class="warning"><span>💬</span><div><strong>Discord版は置き換わりません</strong><p>Web版は同じゲームを遊ぶための新しいクライアントです。Discord版を停止する予定はありません。</p></div></div></section>
-  </main>
-  <footer><div class="wrap">りべりべショッピング <b>v0.3.0-beta</b> · WEB BETA</div></footer>
-</body>
-</html>
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="りべりべショッピング v0.3.0-beta パッチノート"><title>りべりべショッピング v0.3.0-beta</title><link rel="stylesheet" href="../style.css"></head><body>
+<nav class="patch-nav wrap"><a href="../help.html">遊び方・ヘルプ</a><a href="../">最新パッチノート</a><a href="./">バージョン一覧</a></nav>
+<header class="hero"><div class="hero__glow"></div><div class="wrap hero__content"><span class="badge">WEB BETA</span><p class="eyebrow">RIBERIBE SHOPPING · PATCH NOTES</p><h1>DiscordとWebを<br><span>ひとつのゲームへ</span></h1><p class="version">v0.3.0-beta</p><p class="lead">同じ残高・アイテム・クールダウンを使うWeb版の初期基盤を追加しました。</p></div></header>
+<main class="wrap"><section><p class="kicker">WEB STATUS</p><h2>🌐 Phase 1 / 限定β</h2><div class="grid two"><article class="card rare"><span class="rarity">SYNC</span><h3>🔗 Discordアカウント連携</h3><p>Webに表示されるコードをDiscordの /weblink で入力すると、同じPostgreSQLデータを利用できます。</p></article><article class="card jackpot"><span class="rarity">DASHBOARD</span><h3>📱 基本ゲームループ</h3><p>デイリー、ワーク、探索、エナジー、持ちもの、ショップ、コイン相場、ランキングをスマートフォン対応画面から利用できます。</p></article></div><aside class="notice"><strong>限定βです</strong><p>現在は少人数で同期や操作の安全性を確認する段階です。一般公開完了とは表記しません。</p></aside></section>
+<section><p class="kicker">SAFE BY DESIGN</p><h2>Web同期APIの保護</h2><div class="grid three compact"><article><b>🔐 サーバー間認証</b><p>共有シークレットはブラウザへ渡さず、Webバックエンドだけが保持します。</p></article><article><b>🛡️ 入力・頻度制限</b><p>操作ホワイトリスト、入力検証、レート制限、重複リクエスト防止を追加しました。</p></article><article><b>💾 PostgreSQL正本</b><p>報酬・抽選・CT判定はすべてBot/API側で行います。</p></article></div></section>
+<section><p class="kicker">DISCORD</p><h2>💬 Discord版への影響</h2><p>Discord版はこれまで通り利用できます。既存コマンドと常設パネルの操作方法は変わりません。Discordだけで遊ぶユーザーはWebを使う必要がなく、Web版が停止・未設定でもDiscord版は通常動作します。</p><div class="warning"><span>💬</span><div><strong>Discord版は置き換わりません</strong><p>Web版は同じゲームを遊ぶための新しいクライアントです。Discord版を停止する予定はありません。</p></div></div></section></main>
+<footer><div class="wrap">りべりべショッピング <b>v0.3.0-beta</b> · WEB BETA</div></footer></body></html>
