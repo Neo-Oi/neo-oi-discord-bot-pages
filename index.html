@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="りべりべショッピング v1.0.1 Season 0 安定性アップデート">
-  <title>Season 0 安定性アップデート · りべりべショッピング</title>
+  <meta name="description" content="りべりべショッピング v1.0.2 設定・表示名アップデート">
+  <title>設定・表示名アップデート · りべりべショッピング</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,20 +15,20 @@
       <span class="badge">一般公開</span>
       <p class="eyebrow">RIBERIBE SHOPPING</p>
       <h1>Webから<br><span>遊べる</span></h1>
-      <p class="version">v1.0.1-season0</p>
-      <p class="lead">WebとDiscordの同時操作、再試行、Seasonリセットを安全にする安定性アップデートを公開しました。</p>
+      <p class="version">v1.0.2-season0</p>
+      <p class="lead">設定モーダルと操作前の確認を追加し、ログイン中ユーザーの表示名文字化けを修正しました。</p>
     </div>
   </header>
   <main class="wrap">
     <section>
-      <h2>🛡️ データ更新を安全に</h2>
-      <p>対象ユーザーのPostgreSQL行だけをロックして更新し、ゲーム結果・履歴・request IDを1つのトランザクションで確定するよう変更しました。WebとDiscordの同時操作や再試行でも、報酬の二重付与と古い状態による上書きを防ぎます。</p>
+      <h2>⚙️ 設定をひとつに</h2>
+      <p>右上の設定からダークモード、購入前の確認、アイテム使用・換金・鑑定前の確認を切り替えられます。設定はこの端末に保存されます。</p>
     </section>
     <section>
-      <h2>✨ WebとSeasonの改善</h2>
-      <p>換金素材とEXPチップをWebから使用可能にし、EXPチップの一括使用、通常/Seasonショップの区分、所有済み表示、履歴追加表示、日付・相場の自動更新、読込再試行を追加しました。Seasonパッシブは入手経路にかかわらず各種類1個までです。</p>
+      <h2>👤 自分の名前を正しく表示</h2>
+      <p>OAuthで取得した最新のDiscord表示名を連携情報へ反映し、過去に保存されたUTF-8文字化けも自動的に修復します。</p>
     </section>
   </main>
-  <footer><div class="wrap">りべりべショッピング <b>v1.0.1-season0</b> · 一般公開</div></footer>
+  <footer><div class="wrap">りべりべショッピング <b>v1.0.2-season0</b> · 一般公開</div></footer>
 </body>
 </html>
